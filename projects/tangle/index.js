@@ -18,6 +18,11 @@ async function tvl(api) {
   console.debug("Bal", BigInt(totalIssuance).toString())
 
   api.add("TNT", BigInt(totalIssuance))
+
+  return {
+    // TODO: Debugging. Include also all native & erc20 assets.
+    'tether': 134
+  }
 }
 
 module.exports = {
